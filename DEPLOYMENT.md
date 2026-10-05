@@ -11,3 +11,12 @@
 5. Після публікації перевірити `/`, `/sk/`, `/uk/`, `/robots.txt`, `/sitemap.xml` та кнопки контактів на власному домені.
 
 Перенаправлення головної сторінки описано в `vercel.json`.
+
+## Sanity Studio
+
+1. У папці `studio/` виконати `npm install` і `npm run build`.
+2. Авторизуватися в Sanity CLI під акаунтом, якому належить проєкт `9qrql5jr`.
+3. Для нового порожнього набору даних один раз створити `seed.ndjson` командою `node seed.mjs` і імпортувати його: `npx sanity dataset import seed.ndjson production`. Нинішній `production` уже містить початкові дані; повторювати імпорт не потрібно.
+4. Дозволені CORS-адреси без credentials: `https://evgenia-tarcha.com`, `https://www.evgenia-tarcha.com`, `https://sitetarcha.vercel.app`, `http://127.0.0.1:8000`.
+5. Адмінка опублікована на `https://evgenia-tarcha.sanity.studio/`. Для оновлення коду Studio виконати `npm run deploy` у папці `studio/`.
+6. Замовник редагує документи в Studio й натискає **Publish**. Після оновлення кешу Sanity CDN сайт показує нові дані без нового розгортання Vercel.

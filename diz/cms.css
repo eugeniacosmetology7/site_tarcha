@@ -1,0 +1,21 @@
+.cms-price-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.cms-price-card { padding: clamp(24px, 3vw, 42px); background: rgba(250, 243, 235, .55); border: 1px solid rgba(44, 24, 16, .12); }
+.cms-price-category { display: flex; align-items: baseline; gap: 18px; margin-bottom: 18px; }
+.cms-price-category > span { color: #c87c52; font: 500 12px var(--font-dm-sans), sans-serif; letter-spacing: .2em; }
+.cms-price-category h3 { color: #1a0c06; font: 400 clamp(26px, 2.5vw, 38px) var(--font-cormorant), Georgia, serif; margin: 0; }
+.cms-price-item { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 14px 0; border-bottom: 1px solid rgba(44, 24, 16, .1); }
+.cms-price-item:last-child { border-bottom: 0; }
+.cms-price-name { color: #4a3b32; font: 400 clamp(15px, 1.2vw, 18px) var(--font-dm-sans), sans-serif; }
+.cms-price-name em { margin-left: 10px; color: #c87c52; font-size: 11px; font-style: normal; letter-spacing: .08em; text-transform: uppercase; }
+.cms-price-value { flex-shrink: 0; color: #1a0c06; font: 400 clamp(22px, 2.1vw, 32px) var(--font-cormorant), Georgia, serif; }
+.cms-price-value small { color: #988b83; font-size: .55em; }
+.cms-gallery-enabled #gallery { display: block !important; }
+.cms-gallery-enabled a[href="#gallery"] { display: inline-flex !important; }
+.cms-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.cms-gallery-item { border: 0; padding: 0; background: transparent; cursor: pointer; aspect-ratio: 1; overflow: hidden; }
+.cms-gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.cms-gallery-item:hover img { transform: scale(1.04); }
+.cms-gallery-overlay { position: fixed; z-index: 1000; inset: 0; background: rgba(12, 8, 5, .9); display: flex; align-items: center; justify-content: center; cursor: zoom-out; }
+.cms-gallery-overlay img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+.cms-gallery-overlay button { position: absolute; top: 18px; right: 24px; background: none; border: 0; color: #fff; font-size: 40px; cursor: pointer; }
+@media (max-width: 767px) { .cms-price-grid { grid-template-columns: 1fr; gap: 16px; } .cms-gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
