@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://evgenia-tarcha.com/sk/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://evgenia-tarcha.com/sk/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://evgenia-tarcha.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evgenia-tarcha.com/sk/" />
+  </url>
+  <url>
+    <loc>https://evgenia-tarcha.com/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://evgenia-tarcha.com/sk/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://evgenia-tarcha.com/uk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evgenia-tarcha.com/sk/" />
+  </url>
+</urlset>

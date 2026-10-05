@@ -1,0 +1,33 @@
+/* Temporary presentation changes while the Next.js source is unavailable. */
+#gallery,
+a[href="#gallery"] {
+  display: none !important;
+}
+
+#contact > div {
+  max-width: 720px !important;
+}
+
+#contact > div > div:first-child > p:last-of-type,
+#contact form,
+#contact > div > .grid > div > p:first-child {
+  display: none !important;
+}
+
+#contact > div > .grid {
+  display: block !important;
+}
+
+#contact > div > .grid > div {
+  padding-top: 0 !important;
+}
+
+/* Match the consultation CTA to the Hero booking button. */
+#prices a[href="#contact"] {
+  background: #C87C52 !important;
+}
+
+/* Hide the Instagram destination until a real profile is provided. */
+a[href="https://instagram.com/username"] {
+  display: none !important;
+}
